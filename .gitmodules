@@ -1,0 +1,6 @@
+[submodule "modules/octopus2"]
+	path = modules/octopus2
+	url = git@github.com:SimonPiCarter/octopus2.git
+[submodule "modules/godoctopus2"]
+	path = modules/godoctopus2
+	url = git@github.com:SimonPiCarter/godoctopus2.git
