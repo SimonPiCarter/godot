@@ -40,12 +40,12 @@ jobs:
   #   needs: static-checks
   #   uses: ./.github/workflows/macos_builds.yml
 
-  # windows-build:
-  #   if: ${{ vars.DISABLE_GODOT_CI == '' }}
-  #   name: 🏁 Windows
-  #   needs: static-checks
-  #   uses: ./.github/workflows/windows_builds.yml
-  #   secrets: inherit
+  windows-build:
+    if: ${{ vars.DISABLE_GODOT_CI == '' }}
+    name: 🏁 Windows
+    # needs: static-checks
+    uses: ./.github/workflows/windows_builds.yml
+    secrets: inherit
 
   # web-build:
   #   if: ${{ vars.DISABLE_GODOT_CI == '' }}
