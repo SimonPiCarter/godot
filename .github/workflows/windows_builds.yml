@@ -39,6 +39,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.READ_ONLY_PAT }}
 
       - name: Setup Godot build cache
         uses: ./.github/actions/godot-cache
