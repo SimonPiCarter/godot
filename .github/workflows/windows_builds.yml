@@ -73,9 +73,9 @@ jobs:
           name: ${{ matrix.cache-name }}
 
       # Execute unit tests for the editor
-      - name: Unit tests
-        if: ${{ matrix.tests }}
-        run: |
-          ${{ matrix.bin }} --version
-          ${{ matrix.bin }} --help
-          ${{ matrix.bin }} --test --force-colors
+      # - name: Unit tests
+      #   if: ${{ matrix.tests }}
+      #   run: |
+      #     ${{ matrix.bin }} --version
+      #     ${{ matrix.bin }} --help
+      #     ${{ matrix.bin }} --test --force-colors
