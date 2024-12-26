@@ -82,6 +82,13 @@ jobs:
             tests: false
             artifact: true
 
+          - name: Production template (target=template_release, disable_3d, )
+            cache-name: linux-template-minimal
+            target: template_release
+            sconsflags: disable_3d=yes deprecated=no minizip=no production=yes
+            tests: false
+            artifact: true
+
     steps:
       - uses: actions/checkout@v4
         with:
