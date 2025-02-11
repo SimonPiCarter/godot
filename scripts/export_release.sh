@@ -1,1 +1,7 @@
-~/dev/godot/bin/godot.linuxbsd.editor.x86_64 --path /home/simon/godot_workspace/godot_octopus2/ --export-release "Linux/X11" ./bin/export/godoctopus2.x86_64 --headless
+#!/bin/bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+sh ${SCRIPT_DIR}/export_release_linux.sh
+sh ${SCRIPT_DIR}/export_release_windows.sh
+sh ${SCRIPT_DIR}/export_web.sh
