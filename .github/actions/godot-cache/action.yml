@@ -30,6 +30,3 @@ runs:
 
         restore-keys: |
           ${{inputs.cache-name}}-${{env.GODOT_BASE_BRANCH}}-${{github.ref}}-${{github.sha}}
-          ${{inputs.cache-name}}-${{env.GODOT_BASE_BRANCH}}-${{github.ref}}
-          ${{inputs.cache-name}}-${{env.GODOT_BASE_BRANCH}}-refs/heads/${{env.GODOT_BASE_BRANCH}}
-          ${{inputs.cache-name}}-${{env.GODOT_BASE_BRANCH}}
