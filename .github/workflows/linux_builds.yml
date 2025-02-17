@@ -75,12 +75,12 @@ jobs:
           #   tests: false
           #   artifact: true
 
-          - name: Minimal template (target=template_release, everything disabled)
-            cache-name: linux-template-minimal
-            target: template_release
-            sconsflags: modules_enabled_by_default=no disable_3d=yes disable_advanced_gui=yes deprecated=no minizip=no
-            tests: false
-            artifact: true
+          # - name: Minimal template (target=template_release, everything disabled)
+          #   cache-name: linux-template-minimal
+          #   target: template_release
+          #   sconsflags: modules_enabled_by_default=no disable_3d=yes disable_advanced_gui=yes deprecated=no minizip=no
+          #   tests: false
+          #   artifact: true
 
           - name: Production template (target=template_release, production)
             cache-name: linux-template-production
