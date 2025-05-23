@@ -194,6 +194,7 @@ public:
 		}
 	}
 
+	int length() const;
 #ifdef DEBUG_ENABLED
 	static void set_debug_stringnames(bool p_enable) { debug_stringname = p_enable; }
 #endif

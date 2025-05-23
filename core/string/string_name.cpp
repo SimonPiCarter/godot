@@ -177,6 +177,14 @@ bool StringName::operator!=(const StringName &p_name) const {
 	return _data != p_name._data;
 }
 
+int StringName::length() const {
+	if (_data) {
+		return _data->name.length();
+	}
+
+	return 0;
+}
+
 void StringName::operator=(const StringName &p_name) {
 	if (this == &p_name) {
 		return;
